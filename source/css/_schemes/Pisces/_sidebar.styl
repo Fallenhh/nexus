@@ -16,17 +16,20 @@
   box-sizing: border-box;
   width: 240px;
   color: $text-color;
-  background: white;
+  background: rgba(255,255,255,0.8);
   box-shadow: $box-shadow;
   border-radius: $border-radius;
   if (hexo-config('motion.enable') and hexo-config('motion.transition.sidebar')) { opacity: 0; }
-
   &.affix {
     position: fixed;
     top: $sidebar-offset;
   }
 
   &.affix-bottom {
+    position: absolute;
+  }
+  
+  &.affix-top {
     position: absolute;
   }
 
